@@ -81,11 +81,14 @@ java1.java:30: error: <identifier> expected
 1 error
 
 
+
 C:\Users\SUKESH\Desktop\Programming\Ques\Core java>javac java1.java
 java1.java:30: error: invalid method declaration; return type required
        **static public main(String[]args)**
                       ^
 1 error
+
+
 
 C:\Users\SUKESH\Desktop\Programming\Ques\Core java>javac java1.java
 java1.java:30: error: <identifier> expected
@@ -93,17 +96,23 @@ java1.java:30: error: <identifier> expected
                           ^
 1 error
 
+
+
 C:\Users\SUKESH\Desktop\Programming\Ques\Core java>javac java1.java
 java1.java:30: error: <identifier> expected
          **public static void(String[]args)**
                            ^
 1 error
 
+
+
 **public static void main(String[]args)**
 C:\Users\SUKESH\Desktop\Programming\Ques\Core java>javac java1.java
 
 C:\Users\SUKESH\Desktop\Programming\Ques\Core java>java a
 HELLOO
+
+
 
 **static public void main(String[]args)**
 C:\Users\SUKESH\Desktop\Programming\Ques\Core java>javac java1.java
