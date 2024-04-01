@@ -76,7 +76,8 @@ Java works through a combination of its language features, virtual machine archi
 
 C:\Users\SUKESH\Desktop\Programming\Ques\Core java>javac java1.java
 java1.java:30: error: <identifier> expected
-      <ins>**static public void main(String[])**</ins>  
+      <ins>**static public void main(String[])**</ins> 
+      ---
                                         ^
 1 error
 
@@ -86,6 +87,7 @@ java1.java:30: error: <identifier> expected
 C:\Users\SUKESH\Desktop\Programming\Ques\Core java>javac java1.java
 java1.java:30: error: invalid method declaration; return type required
        <ins>**static public main(String[]args)**</ins>
+       ---
                       ^
 1 error
 
@@ -94,6 +96,7 @@ java1.java:30: error: invalid method declaration; return type required
 C:\Users\SUKESH\Desktop\Programming\Ques\Core java>javac java1.java
 java1.java:30: error: <identifier> expected
        <ins>**static public void(String[]args)**</ins>
+       ---
                           ^
 1 error
 
@@ -102,12 +105,14 @@ java1.java:30: error: <identifier> expected
 C:\Users\SUKESH\Desktop\Programming\Ques\Core java>javac java1.java
 java1.java:30: error: <identifier> expected
         <ins>**public static void(String[]args)**<ins>
+        ---
                            ^
 1 error
 
 
 
 <ins>**public static void main(String[]args)**</ins>
+---
 C:\Users\SUKESH\Desktop\Programming\Ques\Core java>javac java1.java
 
 C:\Users\SUKESH\Desktop\Programming\Ques\Core java>java a
