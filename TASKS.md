@@ -71,3 +71,43 @@ Java works through a combination of its language features, virtual machine archi
 5. Java API: Java comes with a bunch of pre-made tools and functions called the Java API. You can use these to do lots of different things without starting from scratch.
   
 6. Execution: Once translated by the JVM, your code runs on the device just like any other program.
+
+#POSSIBILITIES OF MAIN METHOD
+
+C:\Users\SUKESH\Desktop\Programming\Ques\Core java>javac java1.java
+java1.java:30: error: <identifier> expected
+        **static public void main(String[])**
+                                        ^
+1 error
+
+
+C:\Users\SUKESH\Desktop\Programming\Ques\Core java>javac java1.java
+java1.java:30: error: invalid method declaration; return type required
+       **static public main(String[]args)**
+                      ^
+1 error
+
+C:\Users\SUKESH\Desktop\Programming\Ques\Core java>javac java1.java
+java1.java:30: error: <identifier> expected
+        **static public void(String[]args)**
+                          ^
+1 error
+
+C:\Users\SUKESH\Desktop\Programming\Ques\Core java>javac java1.java
+java1.java:30: error: <identifier> expected
+         **public static void(String[]args)**
+                           ^
+1 error
+
+**public static void main(String[]args)**
+C:\Users\SUKESH\Desktop\Programming\Ques\Core java>javac java1.java
+
+C:\Users\SUKESH\Desktop\Programming\Ques\Core java>java a
+HELLOO
+
+**static public void main(String[]args)**
+C:\Users\SUKESH\Desktop\Programming\Ques\Core java>javac java1.java
+
+C:\Users\SUKESH\Desktop\Programming\Ques\Core java>java a
+HELLOO
+C:\Users\SUKESH\Desktop\
