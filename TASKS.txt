@@ -130,3 +130,76 @@ C:\Users\SUKESH\Desktop\
 
 
 
+1)
+  float r=2.5f % 2; //0.5 --commented ----> how is this 0.5 comes as result?
+
+float r=2.5f / 2; //1.25
+
+The `%` operator computes the remainder when dividing, resulting in `0.5` for `2.5f % 2`. However, the `/` operator performs division, yielding `1.25` for `2.5f / 2`.
+
+2)
+23 ==> 2+3=5
+54 ==> 5+4=9
+33 ==> 3+3=9
+19 ==> 1+9=10=1+0 // no need for this
+//55,65 - no need
+
+int r=14; //use only literals  (hardcoded values)
+
+
+import java.util.Scanner;
+
+public class SumOfDigits {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int size = obj.nextInt();
+        int[] a = new int[size];
+        for (int i = 0; i < size; i++) {
+            System.out.print("Enter number " + (i + 1) + ": ");
+            a[i] = obj.nextInt();
+        }
+        for (int n : a) {
+            int d1 = n / 10;
+            int d2 = n % 10;
+            int sum = d1 + d2;
+            System.out.println("Sum of the digits of " + n + " -> " + d1 + " + " + d2 + " -> " + sum);
+        }
+    }
+}
+
+
+
+3)
+Logical operators in programming are used to perform logical operations on boolean values (true or false). These operators allow you to combine or modify boolean values and expressions to make decisions or control the flow of your program. In Java, there are three main logical operators: AND (`&&`), OR (`||`), and NOT (`!`). Let's explore each of them:
+
+1. **AND Operator (`&&`)**:
+   - The AND operator returns `true` if both of its operands are `true`, otherwise, it returns `false`.
+   - Syntax: `operand1 && operand2`
+   - Example:
+     ```java
+     boolean x = true;
+     boolean y = false;
+     boolean result = x && y; // result is false
+     ```
+
+2. **OR Operator (`||`)**:
+   - The OR operator returns `true` if at least one of its operands is `true`, otherwise, it returns `false`.
+   - Syntax: `operand1 || operand2`
+   - Example:
+     ```java
+     boolean x = true;
+     boolean y = false;
+     boolean result = x || y; // result is true
+     ```
+
+3. **NOT Operator (`!`)**:
+   - The NOT operator is a unary operator, which means it operates on a single operand.
+   - The NOT operator negates the boolean value of its operand. If the operand is `true`, the result is `false`, and vice versa.
+   - Syntax: `!operand`
+   - Example:
+     ```java
+     boolean x = true;
+     boolean result = !x; // result is false
+     ```
+
+These logical operators can be combined and used in complex expressions to make decisions or control the flow of your program. They are commonly used in conditional statements (`if`, `else`, `while`, `for`) and expressions where boolean logic is required. Understanding and using logical operators effectively is essential for writing clear and concise code in Java.
