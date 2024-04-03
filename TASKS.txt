@@ -203,3 +203,35 @@ Logical operators in programming are used to perform logical operations on boole
      ```
 
 These logical operators can be combined and used in complex expressions to make decisions or control the flow of your program. They are commonly used in conditional statements (`if`, `else`, `while`, `for`) and expressions where boolean logic is required. Understanding and using logical operators effectively is essential for writing clear and concise code in Java.
+
+
+
+Nested If program
+---
+
+import java.util.Scanner;
+
+public class Number
+{
+    public static void main(String[] args)
+    {
+        Scanner obj = new Scanner(System.in);
+        int number = obj.nextInt();
+        
+        if (number >= 0) 
+       {
+            if (number == 0) 
+             {
+                System.out.println("The number is zero.");
+             }
+             else 
+            {
+                System.out.println("The number is positive.");
+             }
+       }
+      else 
+       {
+            System.out.println("The number is negative.");
+        }
+     }
+}
