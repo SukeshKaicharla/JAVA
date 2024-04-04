@@ -235,3 +235,58 @@ public class Number
         }
      }
 }
+
+
+Task 1:
+=======
+
+int i=90;
+for(;i>100;i++){}
+
+O/P:Nothing
+
+int i=90;
+for(;i>100;i--){}
+
+O/P:Nothing
+
+
+int i=90;
+for(; ;i++){}
+
+O/P:Infinite
+
+
+int i=90;
+for(;i<100;i++){}
+
+O/P:90-99
+
+
+int i=90;
+for(;i<100;i+=2){}
+
+O/P:90 92 94 94 96 98
+
+
+#   task2 : int i=23 ==> 2+3=>5 int i=33 ==> 3+3=>6
+
+    import java.util.Scanner;
+    public class A {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int num = obj.nextInt();
+        while (num > 9) {
+            int sum = 0;
+            while (num != 0) {
+                sum += num % 10;   
+                num /= 10; 
+            }
+            num = sum;
+        }
+
+        System.out.println("The reduced sum of digits is: " + num);
+    }
+}
+
+
