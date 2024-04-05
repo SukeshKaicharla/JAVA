@@ -290,3 +290,143 @@ O/P:90 92 94 94 96 98
 }
 
 
+1. **IF Statement:**
+```
+public class IfStatementExample {
+    public static void main(String[] args) {
+        int x = 10;
+        if (x > 0) {
+            System.out.println("x is positive");
+        } else {
+            System.out.println("x is non-positive");
+        }
+    }
+}
+```
+
+2. **WHILE Loop:**
+```
+public class WhileLoopExample {
+    public static void main(String[] args) {
+        int i = 1;
+        while (i <= 5) {
+            System.out.println("Iteration " + i);
+            i++;
+        }
+    }
+}
+```
+
+3. **DO-WHILE Loop:**
+```
+public class DoWhileLoopExample {
+    public static void main(String[] args) {
+        int i = 1;
+        do {
+            System.out.println("Iteration " + i);
+            i++;
+        } while (i <= 5);
+    }
+}
+```
+
+4. **OPERATORS:**
+```
+public class OperatorsExample {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 20;
+        int sum = a + b;
+        int mul = a * b;
+        int div = a /b;
+        int sub = a - b;
+        int mod = a % b;
+        System.out.println("Sum: " + sum);
+        System.out.println("Mul: " + mul);
+        System.out.println("Div: " + div);
+        System.out.println("Sub: " + sub);
+        System.out.println("mod: " + mod);
+
+    }
+}
+```
+
+5. **FOR Loop:**
+```
+public class ForLoop {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Iteration " + i);
+        }
+    }
+}
+```
+
+6. **INCREMENT and DECREMENT :**
+```
+public class IncDec {
+    public static void main(String[] args) {
+        int x = 5;
+        System.out.println("Initial value of x: " + x);
+        
+        x++; // Increment 
+        System.out.println("After incrementing: " + x);
+        
+        x--; // Decrement 
+        System.out.println("After decrementing: " + x);
+    }
+}
+
+7. **Methods:**
+```
+public class Methods {
+    public static void M1() {
+        System.out.println("Hello, World!");
+    }
+    
+    public static void main(String[] args) {
+        M1();
+    }
+}
+```
+
+8. **Constructors:**
+```
+public class Constructor {
+    private int value;
+
+    public Constructor(int value) {
+        this.value = value;
+    }
+    
+    public void display() {
+        System.out.println("Value: " + value);
+    }
+    
+    public static void main(String[] args) {
+        Constructor obj = new Constructor(10);
+        obj.display();
+    }
+}
+```
+
+9. **Variables:**
+```
+public class Variables {
+    // Instance 
+    int x = 10;
+    String name = "Sukesh";
+
+    public void M1() {
+        // Local var
+        int y = 20;
+        System.out.println("x: " + x);
+        System.out.println("Name: " + name);
+        System.out.println("y: " + y);
+    }
+    
+    public static void main(String[] args) {
+        Variables obj = new Variables();
+        obj.M1();
+    }
+}
