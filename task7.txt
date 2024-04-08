@@ -1,0 +1,74 @@
+1).Purpose of making constructor as private
+
+Making a constructor private prevents the instantiation of objects from outside the class, typically used for creating singleton classes or utility classes.
+
+Example:
+public class Singleton {
+    private static Singleton instance;
+
+    private Singleton() {} // Private constructor
+
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+}
+
+
+2).Can i make constr as final - impact
+
+No, you cannot make a constructor `final` in Java because constructors cannot be inherited or overridden. However, you can make a class `final`, which prevents it from being subclassed. This indirectly restricts the ability to create subclasses with their own constructors, but it does not make the constructor itself `final`.
+
+Making a class `final` ensures that its behavior cannot be modified or extended by other classes, which can be useful for classes where you want to enforce immutability or prevent unintended modifications to the behavior.
+
+Example:
+
+public final class FinalClass {
+    // Constructor cannot be final
+    // ...
+}
+```
+
+3).If a keep int nearby constr - what happens
+
+
+If you keep an `int` variable nearby the constructor in a class, it's likely you're declaring an instance variable within the class, separate from any local variables used within the constructor. This is a common practice for defining the state of objects.
+
+For example:
+
+public class MyClass {
+    private int x; // Instance variable
+
+    // Constructor
+    public MyClass(int x) {
+        this.x = x; // Assigning the parameter value to the instance variable
+    }
+}
+```
+
+4).Class emp, in main method - if a craete 5 obj - it should print 5 as o/p, if u creat 3 obj - it  should print 3 obj
+
+
+public class emp {
+    private static int count = 0;
+
+    public emp() {
+        count++; 
+    }
+    public static int getCount() {
+        return count;
+    }
+    public static void main(String[] args) {
+        emp obj1 = new emp();
+        emp obj2 = new emp();
+        emp obj3 = new emp();
+
+        System.out.println("Number of objects created: " + getCount());
+    }
+}
+
+O/P:3
+```
+
