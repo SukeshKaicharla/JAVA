@@ -71,4 +71,67 @@ public class emp {
 
 O/P:3
 ```
+Write a Java program to print odd numbers from 1 to 99. Prints one number per line.
 
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    Scanner obj=new Scanner(System.in);
+	    int a=obj.nextInt();
+        int b=obj.nextInt();
+	    for(int i=a;i<=b;i++)
+	    {
+	        if(i%2==1)
+	        {
+	            System.out.println(i+" ");
+	        }
+	    }
+	}
+}
+
+
+
+Write a Java program that accepts an integer (n) and computes the value of n+nn+nnn. Sample Output: Input number: 5
+5 + 55 + 555
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    Scanner obj=new Scanner(System.in);
+	    int a=obj.nextInt();
+	    int result=a+a*11+a*111;
+	    System.out.print(a+"+"+a+a+"+"+a+a+a+"="+result);
+	}
+}
+
+
+
+Write a Java program to create and display a unique three-digit number using 1, 2, 3, 4. Also count how many three-digit numbers are there.
+123 143 132 134 241 234 132 342 .... ....
+
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+
+        for (int i = 1; i <= 4; i++)
+        {
+            for (int j = 1; j <= 4; j++) 
+            {
+                for (int k = 1; k <= 4; k++)
+                {
+                    if (i != j && j != k && i != k)
+                    {
+                        int number = i * 100 + j * 10 + k;
+                        
+                        System.out.println(number + " ");
+                    }
+                }
+            }
+        }
+    }
+}
