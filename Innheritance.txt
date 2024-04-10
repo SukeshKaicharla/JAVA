@@ -1,0 +1,111 @@
+what if my child class has lesser access modifier?
+
+If a child class has a lesser access modifier than its parent class, it means that the child class is reducing the visibility of inherited methods or members compared 
+to its parent class. This violates the principle of inheritance because it restricts access to the methods or members that were previously available to subclasses.
+
+In object-oriented programming languages like Java, access modifiers control the visibility of classes, methods, and variables. The access modifiers include public,
+protected, default (package-private), and private.
+
+
+2. Calc, scientific calc, programmer calc - implement complete inheritance(overriding,uniq methd...)
+
+
+Calulator:
+        ADD()
+        SUB()
+        DIV()
+        MUL()
+
+Standard Calulator:
+        ADD()----
+        SUB()   |
+                  ====OVERRIDE
+        DIV()   |
+        MUL()----
+        PERCENTAGE()==UNIQUE
+
+Scientific Calulator:
+        ADD()----
+        SUB()   |
+                  ====OVERRIDE
+        DIV()   |
+        MUL()----
+        Trignometry()---|
+        Function()------|==UNIQUE
+        MODULUS() ------|
+
+Programmer Calculator:
+        ADD()----
+        SUB()   |
+                  ====OVERRIDE
+        DIV()   |
+        MUL()----
+        BITWISE()-----|
+        BITSHIFT()----|==UNIQUE
+        CONVERSIONS()-|
+
+
+Standard Calc extends (is a) Calulator  => Stan Calc can access all the methods of Calculator and some unique methods (if method is not private)
+Scientific Calc extends (is a) Calulator  => Sci Calc can access all the methods of Calculator and some unique methods (if method is not private)
+Programmer Calc extends (is a) Calulator  => Prog Calc can access all the methods of Calculator and some unique methods (if method is not private)
+
+
+3. Radio, Tv, Dvd Player - identify the Apt parent class and implement inheritance
+
+
+Electronic Device:
+      Turn ON\OFF()
+      Volume()
+      Signal()
+      Play()
+      Stop()
+
+Radio:
+    Turn ON\OFF()
+      Volume()
+      Signal()
+      Play()
+      Stop()
+      Channels()--U
+TV:
+    Turn ON\OFF()
+      Volume()
+      Signal()
+      Play()
+      Stop()
+      Channels()--U
+      Picture()---U
+DVD:
+      Turn ON\OFF()
+      Volume()
+      Pause\Play()---U
+      Stop()
+      Playback()--U
+
+4. Admin, Manager, Finance - idetify the parent class and implement inheritance
+
+Department 
+     login() 
+     logout() 
+     campany() 
+Admin
+    login() 
+     logout() 
+     campany() 
+    AdminId()---U
+
+Manager  
+     login() 
+     logout() 
+     campany() 
+      Id()--U
+     employee data()---U
+     
+Finance  
+
+     login() 
+     logout() 
+     campany() 
+     accounts()---U
+     salary()-----U
+     
